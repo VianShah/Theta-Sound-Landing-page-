@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+.hero {
+  background-color: #D6D4A0;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #b73e15;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #b73e15;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h2 {
+  color: #b73e15;
+  margin-bottom: 16px;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 10px 0;
+}
+
+form input, form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #b73e15;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #a13513;
+}
+
+.donate img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #f2f2f2;
+  font-size: 0.9rem;
+}
