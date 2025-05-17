@@ -1,5 +1,5 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz3IazWdagcL6MMMzdxa-cbjk3Vl8oVIJAo1qyOoVzPHCGC8DrbadzENID3Iwb29Bu2uA/exec';
-const form = document.getElementById('waitlist-form');
+const form = document.getElementById('Theta Sound Waitlist');
 const responseEl = document.getElementById('form-response');
 
 form.addEventListener('submit', e => {
