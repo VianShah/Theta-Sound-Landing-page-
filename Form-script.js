@@ -9,7 +9,7 @@ document
 
     // Build the JSONP URL
     const url   = 
-      "https://script.google.com/macros/s/AKfycbwde_BzXUhqZCDl7FG-anRle9bQhWzMS5l1IdIR4uTrQyBnTz2yKzb63WWPPMGvVnBBdg/exec"
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vSjL06kPBxrp2M892_OOgqbA3u1uxGw_j-vM3-g6A06BL1GXrFwFuFvq_p2wLLmE9I0M1fLXg0cZGU3/pubhtml"
       + `?name=${name}`
       + `&email=${email}`
       + `&callback=formCallback`;
