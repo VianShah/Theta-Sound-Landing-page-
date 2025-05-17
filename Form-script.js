@@ -1,6 +1,6 @@
 // Form-script.js
 document
-  .getElementById("Theta Sound Waitlist")
+  .getElementById("12t_4AhIT7HIAPqRlKL42clgTgOdJDdsfYFpnUFtolKs")
   .addEventListener("submit", function(e) {
     e.preventDefault();
     const form  = e.target;
