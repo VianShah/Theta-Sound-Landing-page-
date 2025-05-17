@@ -55,6 +55,15 @@
     <p>© 2025 Theta Sound. Built with love and purpose.</p>
   </footer>
 
-  <script src="Form-script.js"></script>
+  <script src="Form-script.js">
+  </script>
+  <script>
+  function formCallback(response) {
+    console.log("Response:", response);
+    // e.g. show a “Thanks for signing up!” message
+    document.getElementById("msg").textContent = "🎉 You’re on the list!";
+  }
+</script>
+
 </body>
 </html>
