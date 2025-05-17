@@ -33,17 +33,52 @@
   </section>
 
   <section class="waitlist" id="waitlist">
-    <h2>Join Our Waitlist</h2>
-    <form id="waitlist-form">
-      <input type="text" name="name" placeholder="First Name" required>
-      <input type="text" name="surname" placeholder="Last Name" required>
-      <input type="email" name="email" placeholder="Email ID" required>
-      <input type="text" name="excited" placeholder="What are you most excited about?" required>
-      <input type="text" name="referral" placeholder="How did you hear about us?" required>
-      <button type="submit">Sign Up</button>
-    </form>
-    <p id="form-response"></p>
-  </section>
+  <h2>Join Our Waitlist</h2>
+  <form id="waitlist-form">
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="First Name"
+      required
+      autocomplete="given-name"
+    />
+    <input
+      type="text"
+      id="surname"
+      name="surname"
+      placeholder="Last Name"
+      required
+      autocomplete="family-name"
+    />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Email ID"
+      required
+      autocomplete="email"
+    />
+    <input
+      type="text"
+      id="excited"
+      name="excited"
+      placeholder="What are you most excited about?"
+      required
+      autocomplete="off"
+    />
+    <input
+      type="text"
+      id="referral"
+      name="referral"
+      placeholder="How did you hear about us?"
+      required
+      autocomplete="off"
+    />
+    <button type="submit">Sign Up</button>
+  </form>
+  <p id="form-response"></p>
+</section>
 
   <section class="donate">
     <h2>Support the Mission</h2>
