@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('Theta Sound Waitlist');
-  const responseEl = document.getElementById('Theta Sound Waitlist');
+ const form = document.getElementById('waitlist-form'); // Changed ID
+  const responseEl = document.getElementById('waitlist-form'); // Changed ID
 
   if (!form) {
-    console.error("❌ Form element with ID 'Theta Sound Waitlist' not found.");
+    console.error("❌ Form element with ID 'waitlist-form' not found.");
     return;
+  }
   }
 
   form.addEventListener('submit', function (e) {
