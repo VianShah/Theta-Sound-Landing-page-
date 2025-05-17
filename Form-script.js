@@ -1,40 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('waitlist-form');
-  const responseEl = document.getElementById('response'); // Use a separate element for responses
-
-  if (!form) {
-    console.error("❌ Form element with ID 'waitlist-form' not found.");
-    return;
-  }
-
-  form.addEventListener('submit', function (e) {
+// Form-script.js
+document
+  .getElementById("waitlist-form")
+  .addEventListener("submit", function(e) {
     e.preventDefault();
+    const form  = e.target;
+    const name  = encodeURIComponent(form.name.value);
+    const email = encodeURIComponent(form.email.value);
 
-    const formData = new FormData(form);
-    const data = {
-      name: formData.get('name'),
-      surname: formData.get('surname'),
-      email: formData.get('email'),
-      excited: formData.get('excited'),
-      referral: formData.get('referral'),
-    };
+    // Build the JSONP URL
+    const url   = 
+      "https://script.google.com/macros/s/AKfycbwde_BzXUhqZCDl7FG-anRle9bQhWzMS5l1IdIR4uTrQyBnTz2yKzb63WWPPMGvVnBBdg/exec"
+      + `?name=${name}`
+      + `&email=${email}`
+      + `&callback=formCallback`;
 
-    fetch('https://script.google.com/macros/s/AKfycbwde_BzXUhqZCDl7FG-anRle9bQhWzMS5l1IdIR4uTrQyBnTz2yKzb63WWPPMGvVnBBdg/exec', {
-      method: 'POST',
-      body: new URLSearchParams(data)
-    })
-    .then(response => response.text())
-    .then(result => {
-      if (responseEl) {
-        responseEl.textContent = "✅ You're on the list! Thanks for signing up.";
-      }
-      form.reset();
-    })
-    .catch(error => {
-      console.error('❌ Submission error:', error);
-      if (responseEl) {
-        responseEl.textContent = "❌ Something went wrong. Please try again.";
-      }
-    });
+    // Inject a <script> tag instead of fetch()
+    const tag   = document.createElement("script");
+    tag.src     = url;
+    document.body.appendChild(tag);
   });
-});
