@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       referral: formData.get('referral'),
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbz3IazWdagcL6MMMzdxa-cbjk3Vl8oVIJAo1qyOoVzPHCGC8DrbadzENID3Iwb29Bu2uA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwde_BzXUhqZCDl7FG-anRle9bQhWzMS5l1IdIR4uTrQyBnTz2yKzb63WWPPMGvVnBBdg/exec', {
       method: 'POST',
       body: new URLSearchParams(data)
     })
