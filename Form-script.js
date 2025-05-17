@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
- const form = document.getElementById('waitlist-form'); // Changed ID
-  const responseEl = document.getElementById('waitlist-form'); // Changed ID
+  const form = document.getElementById('waitlist-form');
+  const responseEl = document.getElementById('response'); // Use a separate element for responses
 
   if (!form) {
     console.error("❌ Form element with ID 'waitlist-form' not found.");
     return;
-  }
   }
 
   form.addEventListener('submit', function (e) {
@@ -26,12 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .then(response => response.text())
     .then(result => {
-      responseEl.textContent = "✅ You're on the list! Thanks for signing up.";
+      if (responseEl) {
+        responseEl.textContent = "✅ You're on the list! Thanks for signing up.";
+      }
       form.reset();
     })
     .catch(error => {
       console.error('❌ Submission error:', error);
-      responseEl.textContent = "❌ Something went wrong. Please try again.";
+      if (responseEl) {
+        responseEl.textContent = "❌ Something went wrong. Please try again.";
+      }
     });
   });
 });
