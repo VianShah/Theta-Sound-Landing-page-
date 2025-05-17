@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('waitlist-form');
-  const responseEl = document.getElementById('form-response');
+  const form = document.getElementById('Theta Sound Waitlist');
+  const responseEl = document.getElementById('Theta Sound Waitlist');
 
   if (!form) {
     console.error("❌ Form element with ID 'waitlist-form' not found.");
