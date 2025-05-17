@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const responseEl = document.getElementById('Theta Sound Waitlist');
 
   if (!form) {
-    console.error("❌ Form element with ID 'waitlist-form' not found.");
+    console.error("❌ Form element with ID 'Theta Sound Waitlist' not found.");
     return;
   }
 
